@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 - 宋官东</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="resume">
+        <header class="header">
+            <img src="profile.jpg" alt="宋官东" class="profile-img">
+            <div class="basic-info">
+                <h1>宋官东</h1>
+                <p>ID: U202215060</p>
+                <p>Class: 人工智能2202班</p>
+                <p>Birthday: 2004.07.23</p>
+                <p>Email: tear_s723@foxmail.com</p>
+                <!-- <span>ID: U202215060</span><br>
+                <span>Class: 人工智能2202班</span><br>
+                <span>Birthday: 2004.07.23</span><br>
+                <span>Email: tear_s723@foxmail.com</span> -->
+            </div>
+        </header>
+        <section class="section">
+            <h2>兴趣爱好及特长</h2>
+            <p><b>兴趣爱好</b>: 特别喜欢熬夜, 但是第二天又起不来；喜欢看动漫, 不喜欢看电影, 因为一两个小时的电影根本讲不完一个值得推敲的故事；对排版有着近乎疯狂的痴迷; 在体育运动方面, 喜欢打羽毛球和乒乓球。</p>
+            <p><b>特长</b>: 感觉自己没什么特长, 但是又什么都会一点。比较擅长游泳、慢跑和睡觉, 还有干饭。</p>
+        </section>
+        <section class="section">
+            <h2>课程成绩</h2>
+            <form id="gradeForm">
+                <input type="text" id="courseName" placeholder="课程名称" required>
+                <input type="number" id="courseHours" placeholder="学时" min="1" required>
+                <input type="number" id="courseGrade" placeholder="成绩" min="0" required>
+                <button type="button" onclick="addOrUpdateGrade()">提交成绩</button>
+            </form>
+            <table id="gradesTable">
+                <thead>
+                    <tr>
+                        <th>课程名称</th>
+                        <th>学时</th>
+                        <th>成绩</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" id="average">加权平均分：未计算</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <script src="scripts.js"></script>
+        </section>
+        <section class="section">
+            <h2>教育经历</h2>
+            <p>2022.09 - 至今</p>
+            <p><a href="https://aia.hust.edu.cn/" target="top">华中科技大学</a>| 本科生</p>
+            <p>2019.09 - 2022.06</p>
+            <p>仙桃中学 | 孤独的狼</p>
+        </section>
+        <section class="section">
+            <h2>项目经验</h2>
+            <p>C语言课程设计-科技楼双电梯...</p>
+        </section>
+        <footer class="footer">
+            <p>版权所有 &copy; 2024 宋官东</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
